@@ -4,7 +4,7 @@ import Bg from "../../public/img/bg.png";
 export default function Home() {
   return (
     <main>
-      <section className="h-[40svh]   bg-[url('/img/bg.png')] bg-black opacity-50 bg-cover bg-center-center bg-no-repeat">
+      <section className="h-[53svh]   bg-[url('/img/bg.png')]  bg-black opacity-50 bg-cover   bg-no-repeat sm:bg-cover sm:bg-no-repeat sm:bg-center md:bg-cover md:bg-center-center">
         <p className="font-julius text-white font-thin text-3xl  flex items-center justify-center h-[5svh] px-5 ">
           Compare seus produtos e compre barato e com confiança
         </p>
@@ -15,27 +15,30 @@ export default function Home() {
           Pesquise produtos e os compare!
         </p>
         {/* input */}
-        <div className="relative top-[3svh] w-full max-w-sm flex items-center justify-center">
+        <div className="w-full flex justify-center space-x-5 flex-wrap p-5">
           <input
             className="font-inter px-5 rounded-full w-[30svh] h-[6svh] opacity-50 pl-10"
             placeholder="Pesquise aqui..."
           ></input>
           <i className="fas fa-search absolute left-[33svh] top-[5svh] transform -translate-y-1/2"></i>
         </div>
-        {/* botao */}
-        <button className="relative bg-[#222222] text-white rounded-2xl h-[6svh] w-[13svh] font-inter m-10 left-[11svh]">
-          Pesquisar
-        </button>
+        {/* botao pesquisar */}
+        <div className="w-full flex justify-center space-x-5 flex-wrap p-5">
+          <button className="relative bg-[#222222] text-white rounded-2xl -full sm:w-[45%] md:w-[15vw] h-[6vh] font-inter">
+            Pesquisar
+          </button>
+        </div>
         <p className="text-center text-white font-inter text-2xl font-light ">
         Instale nosso App
         </p>
-        <div className=" relative flex  right-[11svh] ">
-        <button className="relative bg-[#222222] text-white rounded-full h-[6svh] w-[15svh] font-inter m-10 left-[12svh]">
-          Apple store
-        </button>
-        <button className="relative bg-[#222222] text-white rounded-full h-[6svh] w-[15svh] font-inter m-10 left-[12svh]">
-          Play store
-        </button>
+        {/* botao apps */}
+        <div className="w-full flex justify-center space-x-5 flex-wrap p-5">
+          <button className="relative bg-[#222222] text-white rounded-full w-[25vw] sm:w-[20vw] md:w-[15vw] h-[6vh] font-inter">
+            Apple store
+          </button>
+          <button className="relative bg-[#222222] text-white rounded-full w-[25vw] sm:w-[20vw] md:w-[15vw] h-[6vh] font-inter">
+            Play store
+          </button>
         </div>
       </section>
     </main>
