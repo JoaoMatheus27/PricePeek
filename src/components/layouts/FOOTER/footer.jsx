@@ -1,6 +1,6 @@
 export default function FOOTER() {
     return (
-        <footer className="flex flex-column items-center font-inter justify-evenly text-sm leading-8">
+        <footer className="flex flex-column items-center font-inter justify-evenly max-h-6 text-sm leading-8">
         <p>
             suporte
         </p>
