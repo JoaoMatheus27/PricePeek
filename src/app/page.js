@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Bg from "../../public/img/bg.png";
-import lupa from "../../public/img/lupa.png";
+import Lupa from "../../public/img/lupa.png";
 import BUTTONAPP from "../components/BUTTONAPP/button.jsx";
 
 export default function Home() {
@@ -21,9 +21,15 @@ export default function Home() {
           <input
             className=" font-inter px-5 rounded-full w-[30svh] h-[6svh] outline-none opacity-50 "
             placeholder="Pesquise aqui..."
-          ></input>
+          >
+            
+          </input>
           <div className="relative right-14 top-3">
-            <Image src={lupa} className="fixed opacity-50 text-black w-5 h-5"></Image>
+            <Image
+              src={Lupa}
+              className="fixed opacity-50 text-black w-5 h-5"
+              alt="lupa"
+            ></Image>
           </div>
         </div>
         {/* botao pesquisar */}
@@ -33,7 +39,7 @@ export default function Home() {
           </button>
         </div>
         <p className="text-center text-white font-inter text-2xl font-light ">
-        Instale nosso App
+          Instale nosso App
         </p>
         {/* botao apps */}
         <BUTTONAPP />
