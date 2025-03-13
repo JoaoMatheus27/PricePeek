@@ -4,8 +4,8 @@ import logoPricePeek from "../../../../public/img/logoPricePeek.svg";
 
 export default function NavAuth() {
   return (
-    <div className= "flex items-center px-5  flex-row bg-[red] justify-between">
+      <div className= "flex items-center justify-center   clip-custom bg-[white] w-[100%]">
         <Image src={logoPricePeek} alt="logoPricePeek" />
-    </div>
+      </div>  
   );
 };

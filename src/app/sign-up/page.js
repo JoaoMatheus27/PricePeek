@@ -1,12 +1,17 @@
 import NavAuth from "@/components/layouts/NAV/NavAuth";
 
-export default function page() {
+export default function Signup() {
   return (
-    <>
-      <div>
+    <div className="h-[100vh]  bg-vermelho ">
       <NavAuth />
-        <h1>Faça seu cadastro</h1>
-      </div>
-    </>
-  )
+      <main className=" bg-veremlho">
+        <h1>Cadastre-se</h1>
+        <section>
+          <input></input>
+          <input></input>
+          <input></input>
+        </section>
+      </main>
+    </div>
+  );
 }

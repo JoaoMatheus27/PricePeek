@@ -5,7 +5,7 @@ import user from "../../../../public/img/user.png";
 
 export default function Navbar() {
   return (
-    <div className= "flex items-center px-5  flex-row bg-[white] justify-between">
+    <div className= "flex items-center px-5  flex-row bg-[white] justify-between ">
         <Image src={logoPricePeek} alt="logoPricePeek" />
         <a href="./sign-up"><Image src={user}  alt="USER" /></a>  
     </div>

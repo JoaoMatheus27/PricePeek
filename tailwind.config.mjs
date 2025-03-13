@@ -8,8 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        vermelho: 'var(--vermelho)',
       },
       fontFamily: {
         'julius': ['"Julius Sans One"', 'sans-serif'],
