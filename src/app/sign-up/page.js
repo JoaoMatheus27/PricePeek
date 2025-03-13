@@ -2,16 +2,16 @@ import NavAuth from "@/components/layouts/NAV/NavAuth";
 
 export default function Signup() {
   return (
-    <div className="h-[100vh]  bg-vermelho ">
+    <div className="h-[100vh]">
       <NavAuth />
-      <main className=" bg-veremlho">
+      <main className=" bg-vermelho">
         <h1>Cadastre-se</h1>
         <section>
-          <input></input>
-          <input></input>
-          <input></input>
+          
         </section>
       </main>
     </div>
   );
 }
+
+// uiverse.io
