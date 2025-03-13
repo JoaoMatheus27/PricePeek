@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className= "flex items-center px-5  flex-row bg-[white] justify-between">
         <Image src={logoPricePeek} alt="logoPricePeek" />
-        <a href="/signup"><Image src={user}  alt="USER" /></a>  
+        <a href="./sign-up"><Image src={user}  alt="USER" /></a>  
     </div>
   );
 };
