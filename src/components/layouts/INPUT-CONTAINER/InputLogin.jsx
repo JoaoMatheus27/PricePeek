@@ -1,32 +1,39 @@
-import React from "react";
+import ButtonSignup from '@/components/BUTTONAPP/ButtonSignup'
+import React from 'react'
 
-function InputLogin() {
+function InputSignup() {
   return (
-    <div className="flex justify-center items-center h-[20vh] bg-gray-100">
-      <div className="flex flex-col gap-6 w-[90%] max-w-md p-6 bg-white rounded-xl shadow-lg">
-        <input
-          className="border border-black rounded-xl p-2 h-[6vh]"
-          type="text"
-          placeholder="Insira seu nome"
+    <div>
+      <div className='flex flex-col gap-5 items-center justify-center bg-[white] py-24 px-16 shadow-lg rounded-[2rem]'>
+        <h1 className='fixed top-52 text-lg font-julius font-bold mt-0'>Cadastre-se</h1>
+        <input 
+        className='w-[100%] border-input pl-3'  
+        type='text' 
+        placeholder='Insira seu nome de usuário' 
+        required
         />
-        <input
-          className="border border-black rounded-xl p-2 h-[6vh]"
-          type="email"
-          placeholder="Insira seu email"
+        <input 
+        className='w-[100%] border-input pl-3'  
+        type="email" 
+        placeholder='Insira seu email' 
+        required
         />
-        <input
-          className="border border-black rounded-xl p-2 h-[6vh]"
-          type="password"
-          placeholder="Insira sua senha"
+        <input 
+        className='w-[100%] border-input pl-3'  
+        type="password" 
+        placeholder='Insira sua senha' 
+        required
         />
-        <input
-          className="border border-black rounded-xl p-2 h-[6vh]"
-          type="password"
-          placeholder="Confirme sua senha"
+        <input 
+        className='w-[100%] border-input pl-3'  
+        type="password" 
+        placeholder='Confirme sua senha' 
+        required
         />
       </div>
+      <ButtonSignup />  
     </div>
-  );
+  )
 }
 
-export default InputLogin;
+export default InputSignup
