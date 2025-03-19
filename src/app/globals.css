@@ -23,3 +23,13 @@ body {
 .clip-custom {
   clip-path: ellipse(100% 90% at 50% 0%);
 }
+
+.border-input{
+  border:1px solid ;
+  border-radius:20px;
+
+}
+
+.border-input::placeholder{
+  font-size: 14px;
+}
