@@ -9,14 +9,14 @@ export default function Home() {
     <>
       <NAVBAR />
       <main className="h-[100%] ">
-        <section className="flex items-center h-[65vh]   bg-[url('/img/bg.png')]  bg-black opacity-90 bg-cover   bg-no-repeat sm:bg-cover sm:bg-no-repeat sm:bg-center md:bg-cover md:bg-center-center">
-          <p className=" font-julius text-white font-thin text-3xl h-[15svh] px-5 ">
-            Compare seus produtos e compre barato e com confiança
+        <section className="flex items-center h-[65vh]   bg-[url('/img/bg.png')]  bg-black opacity-90 bg-cover   bg-no-repeat sm:bg-cover sm:bg-no-repeat sm:bg-center md:bg-cover md:bg-center-center md:break-normal">
+          <p className=" font-julius text-white font-thin text-3xl h-[15svh] px-5 lg:text-5xl">
+            Compare seus produtos <br></br> e compre barato e com confiança
           </p>
         </section>
 
         <section className="min-h-max bg-[#7B0D0D]">
-          <p className="text-center text-white font-inter pt-5">
+          <p className="text-center text-white font-inter pt-5 md:text-lg lg:text-3xl">
             Pesquise produtos e os compare!
           </p>
           {/* input */}
@@ -27,13 +27,13 @@ export default function Home() {
             ></input>
             <Image
               src={Lupa}
-              className="relative right-12 top-4 opacity-50 text-black w-5 h-5"
+              className="relative right-12 top-3 opacity-50 text-black w-5 h-5"
               alt="lupa"
             ></Image>
           </div>
           {/* botao pesquisar */}
           <div className="w-full flex justify-center space-x-5 flex-wrap p-5">
-            <button className="relative bg-[#222222] text-white rounded-2xl w-[30vw] -full sm:w-[45%] md:w-[15vw] h-[6vh] font-inter">
+            <button className="relative bg-[#222222] text-white rounded-2xl w-[30vw] -full sm:w-[45%] md:w-[15vw] h-[6vh] font-inter lg:w-[15%] ">
               Pesquisar
             </button>
           </div>
