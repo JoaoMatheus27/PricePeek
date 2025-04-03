@@ -1,39 +1,42 @@
-import ButtonSignup from '@/components/BUTTONAPP/ButtonSignup'
-import React from 'react'
+import ButtonLogin from "@/components/BUTTONAPP/ButtonLogin";
+import React from 'react';
+import Link from 'next/link'; // Corrigido para 'next/link' com L maiúsculo
 
-function InputSignup() {
+function InputLogin() {
   return (
-    <div>
-      <div className='flex flex-col gap-5 items-center justify-center bg-[white] py-24 px-16 shadow-lg rounded-[2rem]'>
-        <h1 className='fixed top-52 text-lg font-julius font-bold mt-0'>Cadastre-se</h1>
-        <input 
-        className='w-[100%] border-input pl-3'  
+    <div className='flex flex-col gap-5 items-center justify-center bg-white rounded-[2rem] py-24 px-18 shadow-lg xl:py-30 xl:px-24 xl:gap-4'>
+      <h1 className=' text-lg font-julius font-bold mb-6 xl:text-2xl'>Entre já</h1>
+      <input 
+        className='w-[100%] border-input pl-3 h-12'  
         type='text' 
         placeholder='Insira seu nome de usuário' 
         required
-        />
-        <input 
-        className='w-[100%] border-input pl-3'  
+      />
+      <input 
+        className='w-[100%] border-input pl-3 h-12'  
         type="email" 
         placeholder='Insira seu email' 
         required
-        />
-        <input 
-        className='w-[100%] border-input pl-3'  
+      />
+      <input 
+        className='w-[100%] border-input pl-3 h-12'  
         type="password" 
         placeholder='Insira sua senha' 
         required
-        />
-        <input 
-        className='w-[100%] border-input pl-3'  
+      />
+      <input 
+        className='w-[100%] border-input pl-3 h-12'  
         type="password" 
         placeholder='Confirme sua senha' 
         required
-        />
-      </div>
-      <ButtonSignup />  
+      />
+      {/* Remover o <a> aqui */}
+      <Link href="/sign-up" className="ml-10 underline">
+        Não tem uma conta?
+      </Link>
+      <ButtonLogin />  
     </div>
   )
 }
 
-export default InputSignup
+export default InputLogin;
