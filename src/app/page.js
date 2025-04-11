@@ -3,6 +3,7 @@ import Bg from "../../public/img/bg.png";
 import Lupa from "../../public/img/lupa.png";
 import BUTTONAPP from "../components/BUTTONAPP/button.jsx";
 import NAVBAR from "../components/layouts/NAV/Navbar";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -33,11 +34,12 @@ export default function Home() {
           </div>
           {/* botao pesquisar */}
           <div className="w-full flex justify-center space-x-5 flex-wrap p-5">
-            <button className="relative bg-[#222222] text-white rounded-2xl w-[30vw] -full sm:w-[45%] md:w-[15vw] h-[6vh] font-inter lg:w-[15%] ">
-              Pesquisar
-            </button>
+              
+              <button className="relative bg-[#222222] text-white rounded-2xl w-[30vw] -full sm:w-[45%] md:w-[15vw] h-[6vh] font-inter lg:w-[15%] ">
+              <Link href="./comparison"> Pesquisar</Link>
+              </button>
           </div>
-        </section>
+        </section>  
       </main>
     </>
   );
